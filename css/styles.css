@@ -133,8 +133,6 @@ img {
 
 .container-business {
   justify-content: center;
-  padding-left: 316px;
-  padding-right: 316px;
 }
 
 .business {
@@ -150,7 +148,8 @@ img {
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
-
+  margin-right: auto;
+  margin-left: auto;
   color: #fff;
   max-width: 496px;
 
