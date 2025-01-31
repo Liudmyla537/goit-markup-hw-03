@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" />
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,7 +18,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
@@ -58,19 +58,23 @@
     <main>
 
         <!--Основна кнопка, первая секция-->
+
         <section class="business">
-            <h1 class="business-one">
-                Effective Solutions
-                for Your Business
-            </h1>
-            <button class="button-business" type="button">Order Service</button>
+
+            <div class="container container-business">
+                <h1 class="business-one">
+                    Effective Solutions
+                    for Your Business
+                </h1>
+                <button class="button-business" type="button">Order Service</button>
+            </div>
         </section>
 
 
         <!--Вторая секция-->
-        <section>
-            <div class="container">
-                <h2></h2>
+        <section class="feature-job">
+            <div class="container container-job">
+                <h2 class="visually-hidden">Feature</h2>
                 <ul class="feature">
                     <li class="feature-base">
                         <h3 class="base-two">Strategy</h3>
@@ -110,32 +114,37 @@
                     <li class="card">
 
                         <img src="./images/img-3.jpg" alt="Mark Guerrero" width="264">
-
-                        <h3 class="team-sec">Mark Guerrero</h3>
-                        <p class="team-sec-p">Product Designer</p>
+                        <div class="card-content">
+                            <h3 class="team-sec">Mark Guerrero</h3>
+                            <p class="team-sec-p">Product Designer</p>
+                        </div>
                     </li>
                     <li class="card">
 
                         <img src="./images/img-2.jpg" alt="Tom Ford" width="264">
-
-                        <h3 class="team-sec">Tom Ford</h3>
-                        <p class="team-sec-p">Frontend Developer</p>
+                        <div class="card-content">
+                            <h3 class="team-sec">Tom Ford</h3>
+                            <p class="team-sec-p">Frontend Developer</p>
+                        </div>
                     </li>
+
                     <li class="card">
 
                         <img src="./images/img-1.jpg" alt="Camila Garcia" width="264">
-
-                        <h3 class="team-sec">Camila Garcia</h3>
-                        <p class="team-sec-p">Marketing</p>
+                        <div class="card-content">
+                            <h3 class="team-sec">Camila Garcia</h3>
+                            <p class="team-sec-p">Marketing</p>
+                        </div>
                     </li>
 
                     <li class="card">
 
 
                         <img src="./images/img.jpg" alt="Daniel Wilson" width="264">
-
-                        <h3 class="team-sec">Daniel Wilson</h3>
-                        <p class="team-sec-p">UI Designer</p>
+                        <div class="card-content">
+                            <h3 class="team-sec">Daniel Wilson</h3>
+                            <p class="team-sec-p">UI Designer</p>
+                        </div>
                     </li>
 
                 </ul>
@@ -146,38 +155,48 @@
         <section class="portfolio">
             <div class="container">
                 <h2 class="portfolio-h">Our Portfolio</h2>
-                <ul class="portfolio-card-one">
-                    <li class="one-block">
-                        <img src="./images/img-9.jpg" alt="Banking App" width="360" />
-                        <h3 class="portfolio-h-h">Banking App</h3>
-                        <p class="portfolio-h-p">App</p>
+                <ul class="portfolio-card">
+                    <li class="block">
+                        <img src="./images/img-9.jpg" alt="Banking App" width="360">
+                        <div class="card-portfolio">
+                            <h3 class="portfolio-h-h">Banking App</h3>
+                            <p class="portfolio-h-p">App</p>
+                        </div>
                     </li>
-                    <li class="one-block">
-                        <img src="./images/img-8.jpg" alt="Cashless Payment" width="360" />
-                        <h3 class="portfolio-h-h">Cashless Payment</h3>
-                        <p class="portfolio-h-p">Marketing</p>
+                    <li class="block">
+                        <img src="./images/img-8.jpg" alt="Cashless Payment" width="360">
+                        <div class="card-portfolio">
+                            <h3 class="portfolio-h-h">Cashless Payment</h3>
+                            <p class="portfolio-h-p">Marketing</p>
+                        </div>
                     </li>
-                    <li class="one-block">
+                    <li class="block">
                         <img src="./images/img-7.jpg" alt="Meditation App" width="360">
-                        <h3 class="portfolio-h-h">Meditation App</h3>
-                        <p class="portfolio-h-p">App</p>
+                        <div class="card-portfolio">
+                            <h3 class="portfolio-h-h">Meditation App</h3>
+                            <p class="portfolio-h-p">App</p>
+                        </div>
                     </li>
-                </ul>
-                <ul class="portfolio-card-two">
-                    <li class="two-block">
+                    <li class="block">
                         <img src="./images/img-6.jpg" alt="Taxi Service" width="360">
-                        <h3 class="portfolio-h-h">Taxi Service</h3>
-                        <p class="portfolio-h-p">Marketing</p>
+                        <div class="card-portfolio">
+                            <h3 class="portfolio-h-h">Taxi Service</h3>
+                            <p class="portfolio-h-p">Marketing</p>
+                        </div>
                     </li>
-                    <li class="two-block">
+                    <li class="block">
                         <img src="./images/img-5.jpg" alt="Screen Illustrations" width="360">
-                        <h3 class="portfolio-h-h">Screen Illustrations</h3>
-                        <p class="portfolio-h-p">Design</p>
+                        <div class="card-portfolio">
+                            <h3 class="portfolio-h-h">Screen Illustrations</h3>
+                            <p class="portfolio-h-p">Design</p>
+                        </div>
                     </li>
-                    <li class="two-block">
+                    <li class="block">
                         <img src="./images/img-4.jpg" alt="Online Courses" width="360">
-                        <h3 class="portfolio-h-h">Online Courses</h3>
-                        <p class="portfolio-h-p">Marketing</p>
+                        <div class="card-portfolio">
+                            <h3 class="portfolio-h-h">Online Courses</h3>
+                            <p class="portfolio-h-p">Marketing</p>
+                        </div>
                     </li>
                 </ul>
             </div>

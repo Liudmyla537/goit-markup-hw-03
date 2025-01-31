@@ -26,6 +26,10 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+}
+
 /*Загальні стилі ----------------------------------------------*/
 .container {
   max-width: 1158px;
@@ -127,32 +131,30 @@ p {
 
 /*Section 1------------------------------------------------- */
 
+.container-business {
+  justify-content: center;
+  padding-left: 316px;
+  padding-right: 316px;
+}
+
 .business {
-  height: 600px;
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .business-one {
-  padding-top: 188px;
-  padding-left: 316px;
-  padding-right: 316px;
-  margin-bottom: 48px;
   background-color: #2e2f42;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
-  align-items: center;
-  color: #fff;
-  display: flex;
-}
 
-button {
-  margin: 48px auto 0;
-  display: block;
-  border-radius: 4px;
-  padding: 16px 32px;
+  color: #fff;
+  max-width: 496px;
+
+  margin-bottom: 48px;
 }
 
 .button-business {
@@ -163,33 +165,57 @@ button {
   letter-spacing: 0.04em;
 }
 
+button {
+  display: block;
+  margin: 48px auto 0;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 button:hover,
 button:focus {
   background-color: #404bbf;
 }
 
-button {
-  cursor: pointer;
-}
+/*--------Section 2-------------------------------------------*/
 
-/*Section-2------------------------------------------------- */
+.feature-job {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 .feature {
   display: flex;
-  margin: 120px 0;
-  gap: 8px;
+  gap: 24px;
 }
 
 .feature-base {
-  gap: 8px;
-  align-items: flex-start;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
+  width: calc((100% - 72px) / 4);
   gap: 8px;
 }
 
 .base-two {
+  padding-bottom: 8px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: nowrap;
+}
+
+/*------Section 3---------------------------------------*/
+h3 {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -197,11 +223,7 @@ button {
   color: #2e2f42;
 }
 
-.base-two {
-  margin-bottom: 8px;
-}
-
-.base-p {
+p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -209,7 +231,30 @@ button {
   color: #434455;
 }
 
-/*Section-3-------------------------------------------------*/
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+
+.team {
+  background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 0 0 4px 4px;
+  width: calc((100% - 72px) / 4);
+}
+
+.card-content {
+  padding: 32px 0;
+}
 
 .our-team {
   font-weight: 700;
@@ -218,72 +263,44 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-bottom: 72px;
-  padding-top: 120px;
   text-transform: capitalize;
+
+  margin-bottom: 72px;
 }
 
 .team-card {
   display: flex;
   gap: 24px;
-  width: calc((100% - 4 * 24px) / 4);
-}
-
-.team {
-  background-color: #f4f4fd;
-}
-
-.card {
-  background-color: #fff;
-  padding-bottom: 120px;
 }
 
 .team-sec-p {
   text-transform: capitalize;
   background-color: #ffffff;
-  margin-bottom: 32px;
   text-align: center;
 }
 
 .team-sec {
-  text-align: center;
-  margin-top: 32px;
-  margin-bottom: 8px;
   line-height: 1.2;
   background-color: #ffffff;
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 0.02em;
-
+  text-align: center;
+  margin-bottom: 8px;
   color: #2e2f42;
 }
+
 .card {
   background-color: #ffffff;
 }
+/*---------Section 4------------------------------------*/
 
-/*------------Section-4--------------------------------*/
-
-.one-block,
-.two-block {
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
-}
-.portfolio-card-one {
-  display: flex;
-  gap: 24px;
-  margin-bottom: 48px;
-}
-
-.portfolio-card-two {
-  display: flex;
-  gap: 24px;
+.portfolio {
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 
 .portfolio-h {
-  margin-top: 120px;
-  padding-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -291,49 +308,48 @@ button {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.portfolio-card {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.card-portfolio {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.block {
+  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-h-h {
-  margin-top: 32px;
   margin-bottom: 8px;
 }
-
-.portfolio-h-p {
-  padding-bottom: 32px;
-}
-
-/*--------Footer---------------------------------------*/
-
+/*--------------Footer-------------------------------------*/
 .page-footer {
   background-color: #2e2f42;
-  height: 312px;
-}
-
-.footer-container {
   padding-top: 100px;
+  padding-bottom: 100px;
 }
-
-.logo footer-logo {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.16667;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
-}
-
 .logo-footer {
   color: #f4f4fd;
 }
 
 .footer-p {
-  margin-top: 16px;
   color: #f4f4fd;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-
-  width: 264px;
-  height: 112px;
+  max-width: 264px;
+}
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
