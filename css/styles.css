@@ -116,10 +116,7 @@ img {
   color: #434455;
 }
 
-.contacts-link:hover {
-  color: #404bbf;
-}
-
+.contacts-link:hover,
 .contacts-link:focus {
   color: #404bbf;
 }
@@ -141,7 +138,7 @@ img {
   padding-bottom: 188px;
 }
 
-.business-one {
+.business-title {
   background-color: #2e2f42;
   font-weight: 700;
   font-size: 56px;
@@ -182,26 +179,31 @@ button:focus {
 
 /*--------Section 2-------------------------------------------*/
 
-.feature-job {
+.feature {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
-.feature {
+.feature-list {
   display: flex;
   gap: 24px;
 }
 
-.feature-base {
+.feature-item {
   width: calc((100% - 72px) / 4);
   gap: 8px;
 }
 
-.base-two {
+.feature-subtitle {
   margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
-.visually-hidden {
+.feature-title {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -212,18 +214,15 @@ button:focus {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-/*------Section 3---------------------------------------*/
-h3 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
+  text-align: center;
   color: #2e2f42;
 }
 
-p {
+.feature-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -231,14 +230,7 @@ p {
   color: #434455;
 }
 
-h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11111;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
-}
+/*------Section 3---------------------------------------*/
 
 .team {
   background-color: #f4f4fd;
@@ -246,17 +238,7 @@ h2 {
   padding-bottom: 120px;
 }
 
-.card {
-  background-color: #fff;
-  border-radius: 0 0 4px 4px;
-  width: calc((100% - 72px) / 4);
-}
-
-.card-content {
-  padding: 32px 0;
-}
-
-.our-team {
+.team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -264,22 +246,25 @@ h2 {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-
   margin-bottom: 72px;
 }
 
-.team-card {
+.team-list {
   display: flex;
   gap: 24px;
 }
 
-.team-sec-p {
-  text-transform: capitalize;
-  background-color: #ffffff;
-  text-align: center;
+.team-items {
+  background-color: #fff;
+  border-radius: 0 0 4px 4px;
+  width: calc((100% - 72px) / 4);
 }
 
-.team-sec {
+.team-content {
+  padding: 32px 0;
+}
+
+.team-subtitle {
   line-height: 1.2;
   background-color: #ffffff;
   font-weight: 500;
@@ -290,9 +275,12 @@ h2 {
   color: #2e2f42;
 }
 
-.card {
+.team-text {
+  text-transform: capitalize;
   background-color: #ffffff;
+  text-align: center;
 }
+
 /*---------Section 4------------------------------------*/
 
 .portfolio {
@@ -300,7 +288,7 @@ h2 {
   padding-bottom: 120px;
 }
 
-.portfolio-h {
+.portfolio-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -311,37 +299,51 @@ h2 {
   margin-bottom: 72px;
 }
 
-.portfolio-card {
+.portfolio-list {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
 }
 
-.card-portfolio {
+.portfolio-items {
+  width: calc((100% - 48px) / 3);
+}
+
+.portfolio-content {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
 
-.block {
-  width: calc((100% - 48px) / 3);
-}
-
-.portfolio-h-h {
+.portfolio-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
   margin-bottom: 8px;
 }
+
+.portfolio-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
 /*--------------Footer-------------------------------------*/
 .page-footer {
   background-color: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.logo-footer {
+.footer-logo-text {
   color: #f4f4fd;
 }
 
-.footer-p {
+.footer-text {
   color: #f4f4fd;
   font-weight: 400;
   font-size: 16px;
@@ -349,6 +351,7 @@ h2 {
   letter-spacing: 0.02em;
   max-width: 264px;
 }
+
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
